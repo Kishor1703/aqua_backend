@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:aquaalert_test;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  flyway:
+    enabled: false
+
+app:
+  notifications:
+    email:
+      enabled: false
+  jwt:
+    secret: test_secret_key_for_unit_tests_only_min_256_bits___
+    access-token-expiry-minutes: 30
+    refresh-token-expiry-days: 7
+  cors:
+    allowed-origins: http://localhost:5173

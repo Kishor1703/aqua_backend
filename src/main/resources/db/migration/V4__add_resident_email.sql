@@ -1,0 +1,1 @@
+ALTER TABLE residents ADD COLUMN email VARCHAR(254);
