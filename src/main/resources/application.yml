@@ -19,9 +19,7 @@ spring:
 
   datasource:
     # Default to localhost for direct local runs; Docker can still override via DB_URL.
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/aquaalert}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:200417}
+    url: ${DB_URL}
     hikari:
       maximum-pool-size: 10
       minimum-idle: 2
